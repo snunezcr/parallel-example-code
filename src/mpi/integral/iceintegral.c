@@ -82,6 +82,7 @@ int main(int argc, char *argv[]) {
 	mi_a = a + rank_local*mi_n*h;
 	mi_b = mi_a + mi_n*h;
 	mi_trapezoide = trapezoide(mi_a, mi_b, mi_n, h);
+	printf("T en %f--%f %d %f\n", mi_a, mi_b, mi_n, h);
 
 	/* Se calcula el resultado de la suma de Riemann con cada una de las
 	 * reglas trapezoidales.
@@ -101,7 +102,7 @@ int main(int argc, char *argv[]) {
 	/* Se imprime el resultado */
 	if (rank_local == 0)
 		printf("Con %d trapezoides se estima la intregral por sumas de"
-			"Riemann\n desde %f hasta %f = %f\n", n, a ,b, total);
+			" Riemann\n desde %f hasta %f = %f\n", n, a ,b, total);
 
 	/* Se finaliza el programa MPI */
 	MPI_Finalize();
