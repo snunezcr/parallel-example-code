@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
 	 */
 	if (rank_local == 0) {
 		total = mi_trapezoide;
-		for (fuente = 0; fuente < procs; fuente++) {
+		for (fuente = 1; fuente < procs; fuente++) {
 			MPI_Recv(&mi_trapezoide, 1, MPI_FLOAT, fuente, etiqueta,
 						MPI_COMM_WORLD, &estado);
 			total += mi_trapezoide;
