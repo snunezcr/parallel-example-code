@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 	mi_a = a + rank_local*mi_n*h;
 	mi_b = mi_a + mi_n*h;
 	mi_trapezoide = trapezoide(mi_a, mi_b, mi_n, h);
-	printf("T en %f--%f %d %f\n", mi_a, mi_b, mi_n, h);
+	printf("T en %f--%f %d %f proc %d\n", mi_a, mi_b, mi_n, h, rank_local);
 
 	/* Se calcula el resultado de la suma de Riemann con cada una de las
 	 * reglas trapezoidales.
