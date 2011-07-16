@@ -19,7 +19,7 @@ build:
 	$(CC) $(CFLAGS) -o $(PREFIX) $(LDFLAGS) $(PREFIX).c
 
 install:
-	cp $(PREFIX) ..
+	cp $(PREFIX) ../bin
 
 pi:
 	make -C pi
@@ -29,5 +29,5 @@ dot-product:
 
 clean:
 	rm -f $(PREFIX)
-	rm -f ../$(PREFIX)
+	rm -f ../bin/$(PREFIX)
 
