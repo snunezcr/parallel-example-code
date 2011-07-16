@@ -12,13 +12,13 @@ CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
 
-all: hello
+all: hello integration
 
 hello:
 	make -C hello-world
 
-#integration:
-#	make -C integration
+integration:
+	make -C integral
 
 #pi:
 #	make -C pi
@@ -49,7 +49,7 @@ hello:
 
 clean:
 	make -C hello-world clean
-#	make -C integration clean
+	make -C integral clean
 #	make -C pi clean
 #	make -C dot-product clean
 #	make -C sparse-matrix clean
