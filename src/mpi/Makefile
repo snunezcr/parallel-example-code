@@ -12,51 +12,51 @@ CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
 
-all: hello-world integration pi dot-product sparse-matrix fox-matrix ring-comm jacobi simple-sort bitonic-sort poisson
+all: hello
 
-hello-world:
+hello:
 	make -C hello-world
 
-integration:
-	make -C integration
+#integration:
+#	make -C integration
 
-pi:
-	make -C pi
+#pi:
+#	make -C pi
 
-dot-product:
-	make -C dot-product
+#dot-product:
+#	make -C dot-product
 
-sparse-matrix:
-	make -C sparse-matrix
+#sparse-matrix:
+#	make -C sparse-matrix
 
-fox-matrix:
-	make -C fox-matrix
+#fox-matrix:
+#	make -C fox-matrix
 
-ring-comm:
-	make -C ring-comm
+#ring-comm:
+#	make -C ring-comm
 
-jacobi:
-	make -C jacobi
+#jacobi:
+#	make -C jacobi
 
-simple-sort:
-	make -C simple-sort
+#simple-sort:
+#	make -C simple-sort
 
-bitonic-sort:
-	make -C bitonic-sort
+#bitonic-sort:
+#	make -C bitonic-sort
 
-poisson:
-	make -C poisson
+#poisson:
+#	make -C poisson
 
 clean:
 	make -C hello-world clean
-	make -C integration clean
-	make -C pi clean
-	make -C dot-product clean
-	make -C sparse-matrix clean
-	make -C fox-matrix clean
-	make -C ring-comm clean
-	make -C jacobi clean
-	make -C simple-sort clean
-	make -C bitonic-sort clean
-	make -C poisson clean
+#	make -C integration clean
+#	make -C pi clean
+#	make -C dot-product clean
+#	make -C sparse-matrix clean
+#	make -C fox-matrix clean
+#	make -C ring-comm clean
+#	make -C jacobi clean
+#	make -C simple-sort clean
+#	make -C bitonic-sort clean
+#	make -C poisson clean
 
