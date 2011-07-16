@@ -1,0 +1,35 @@
+README
+
+El codigo fuente en este repositorio corresponde a un conjunto de ejemplos
+desarrollado para apoyar la Asesoria/Practica en Computacion Paralela para el
+Instituto Costarricense de Electricidad, Julio-Agosto 2011.
+
+Los ejemplos estan divididos en los tres paradigmas principales:
+
+- MPI para paso de mensajes en arquitecturas distribuidas
+- OpenMP para diseno de software multi-core
+- CUDA para GPGPU computing
+
+La organizacion del codigo fuente es en directorios, en donde cada directorio
+referente a uno de los tres paradigmas anteriores contiene los ejemplos que se
+descargaran y exploraran en clase.
+
+La estructura de los laboratorios sera la siguiente:
+
+1. Cada ejemplo de codigo fuente explora un conjunto de conceptos vistos en la
+sesion teorica. Se descargara el codigo fuente y se compilara tomando en cuenta
+los detalles especificos de la arquitectura. Se hara enfasis en el uso de make
+y otras herramientas que permitan automatizar la compilacion y la deteccion de
+errores.
+
+2. Una vez instalado el ejemplo, se hara una lectura del codigo fuente con
+respecto a los aspectos teoricos del mismo. Se hara un analisis detallado de los
+posibles errores en diseno, codificacion y ejecucion.
+
+3. Los estudiantes deberan efectuar modificaciones al mismo para analizar los
+cambios en el comportamiento.
+
+4. Al final de la sesion, el equipo de estudiantes utilizara los principios 
+vistos en el codigo para resolver un problema especifico donde puedan utilizar
+los bloques constructivos de cada ejemplo.
+
