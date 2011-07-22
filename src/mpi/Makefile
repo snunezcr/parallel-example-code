@@ -12,7 +12,7 @@ CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
 
-all: hello integration pi dotprod vecmat pimc
+all: hello integration pi dotprod vecmat pimc heat
 
 hello:
 	make -C hello-world
@@ -32,9 +32,8 @@ vecmat:
 pimc:
 	make -C pi-montecarlo
 
-#jacobi:
-#	make -C matrix-jacobi
-
+heat:
+	make -C fourier-heat
 
 clean:
 	make -C hello-world clean
@@ -43,6 +42,5 @@ clean:
 	make -C dot-product clean
 	make -C vector-matrix clean
 	make -C pi-montecarlo clean
-#	make -C matrix-jacobi clean
-#	make -C bitonic-sort clean
+	make -C fourier-heat clean
 

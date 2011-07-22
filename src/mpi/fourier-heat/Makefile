@@ -6,12 +6,12 @@
 #
 # Julio-Agosto 2011
 # 
-# Makefile para aproximacion de Pi por Monte Carlo
+# Makefile para aproximacion de difusion de Fourier de temperatura 2D
 
 CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
-PREFIX=icepimc
+PREFIX=iceheat
 
 all: build install
 
