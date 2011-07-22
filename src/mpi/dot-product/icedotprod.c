@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
 	mi_n = n/procs;
 
 	leer_vector("Vector x: ", x_local, mi_n, procs, rank_local);
-	leer_vector("Vector y:", y_local, mi_n, procs, rank_local);
+	leer_vector("Vector y: ", y_local, mi_n, procs, rank_local);
 
 	prodpunto = prod_punto_par(x_local, y_local, mi_n);
 
@@ -64,7 +64,7 @@ void leer_vector(char* entrada, float *v_local, int mi_n, int procs,
     	MPI_Status status;
 
 	if (rank_local == 0) {
-		printf("Datos: %s\n", entrada);
+		printf("Datos: %s", entrada);
 		
 		for (i = 0; i < mi_n; i++)
 		    total_lectura = scanf("%f", &v_local[i]);
