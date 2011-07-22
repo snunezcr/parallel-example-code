@@ -29,26 +29,11 @@ dotprod:
 vecmat:
 	make -C vector-matrix
 
-#sparse-matrix:
-#	make -C sparse-matrix
-
-#fox-matrix:
-#	make -C fox-matrix
-
 #ring-comm:
 #	make -C ring-comm
 
-#jacobi:
-#	make -C jacobi
-
-#simple-sort:
-#	make -C simple-sort
-
 #bitonic-sort:
 #	make -C bitonic-sort
-
-#poisson:
-#	make -C poisson
 
 clean:
 	make -C hello-world clean
@@ -56,11 +41,6 @@ clean:
 	make -C pi-calc clean
 	make -C dot-product clean
 	make -C vector-matrix clean
-#	make -C sparse-matrix clean
-#	make -C fox-matrix clean
 #	make -C ring-comm clean
-#	make -C jacobi clean
-#	make -C simple-sort clean
 #	make -C bitonic-sort clean
-#	make -C poisson clean
 
