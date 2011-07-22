@@ -12,7 +12,7 @@ CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
 
-all: hello integration pi
+all: hello integration pi dotprod
 
 hello:
 	make -C hello-world
@@ -23,8 +23,8 @@ integration:
 pi:
 	make -C pi-calc
 
-#dot-product:
-#	make -C dot-product
+dotprod:
+	make -C dot-product
 
 #sparse-matrix:
 #	make -C sparse-matrix
@@ -51,7 +51,7 @@ clean:
 	make -C hello-world clean
 	make -C integral clean
 	make -C pi-calc clean
-#	make -C dot-product clean
+	make -C dot-product clean
 #	make -C sparse-matrix clean
 #	make -C fox-matrix clean
 #	make -C ring-comm clean
