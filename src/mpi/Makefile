@@ -12,7 +12,7 @@ CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
 
-all: hello integration pi dotprod
+all: hello integration pi dotprod vecmat
 
 hello:
 	make -C hello-world
@@ -25,6 +25,9 @@ pi:
 
 dotprod:
 	make -C dot-product
+
+vecmat:
+	make -C vector-matrix
 
 #sparse-matrix:
 #	make -C sparse-matrix
@@ -52,6 +55,7 @@ clean:
 	make -C integral clean
 	make -C pi-calc clean
 	make -C dot-product clean
+	make -C vector-matrix clean
 #	make -C sparse-matrix clean
 #	make -C fox-matrix clean
 #	make -C ring-comm clean
