@@ -12,7 +12,7 @@ CC=mpicc
 CFLAGS=-g
 LDFLAGS=-lm
 
-all: hello integration pi dotprod vecmat
+all: hello integration pi dotprod vecmat pimc
 
 hello:
 	make -C hello-world
@@ -29,11 +29,12 @@ dotprod:
 vecmat:
 	make -C vector-matrix
 
-#ring-comm:
-#	make -C ring-comm
+pimc:
+	make -C pi-montecarlo
 
-#bitonic-sort:
-#	make -C bitonic-sort
+#jacobi:
+#	make -C matrix-jacobi
+
 
 clean:
 	make -C hello-world clean
@@ -41,6 +42,7 @@ clean:
 	make -C pi-calc clean
 	make -C dot-product clean
 	make -C vector-matrix clean
-#	make -C ring-comm clean
+	make -C pi-montecarlo clean
+#	make -C matrix-jacobi clean
 #	make -C bitonic-sort clean
 
