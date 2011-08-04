@@ -6,12 +6,12 @@
 #
 # Julio-Agosto 2011
 # 
-# Makefile para suma vectorial en CUDA C
+# Makefile para sort bitonico en CUDA C
 
 CC=nvcc
 CFLAGS=
 LDFLAGS=
-PREFIX=icevecadd
+PREFIX=icebitsort
 
 all: build install
 
