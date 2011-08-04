@@ -6,12 +6,12 @@
 #
 # Julio-Agosto 2011
 # 
-# Makefile para multiplicacion/convolucion con profiling en CUDA C
+# Makefile para suma vectorial en CUDA C con deteccion de GPU
 
 CC=nvcc
 CFLAGS=
 LDFLAGS=
-PREFIX=icemultprof
+PREFIX=icevecadd_det
 
 all: build install
 
